@@ -1,0 +1,15 @@
+{
+  "name": "enre-xx-test-generator",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@enre-ts/doc-parser": "^0.4.2",
+    "@enre-ts/shared": "^0.4.2",
+    "@enre-ts/test-finder": "^0.4.2",
+    "@enre-ts/test-generator": "^0.4.2",
+    "commander": "^10.0.1"
+  },
+  "engines": {
+    "node": ">=16 <19"
+  }
+}
