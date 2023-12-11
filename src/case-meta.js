@@ -13,6 +13,16 @@ export default {
      */
     name: {type: 'string'},
     /**
+     * Define symbol file0, file1, ... to relative file paths.
+     *
+     * This is designed to only work on manual test cases (that is, in standalone assertion.yaml,
+     * but not assertion block in markdown file).
+     */
+    define: {
+      type: 'object',
+      additionalProperties: true,
+    },
+    /**
      * Defines entity's fetching properties.
      */
     entity: {
