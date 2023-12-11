@@ -2,9 +2,6 @@
   "name": "enre-xx-test-generator",
   "version": "1.0.0",
   "type": "module",
-  "scripts": {
-    "start": "node --experimental-specifier-resolution=node ./src/index.js"
-  },
   "dependencies": {
     "@enre-ts/doc-parser": "^0.4.2",
     "@enre-ts/doc-validator": "^0.4.2",

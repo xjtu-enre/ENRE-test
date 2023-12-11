@@ -80,7 +80,9 @@ Node.js 16~18.
 
 2. Fulfill all TODOs in `/src/index.js` that transform assertion YAML object and build native test code.
 
-3. **Change the working directory to ENRE's root and then** run `npm run start` to start the framework.
+3. **Change the working directory to ENRE's root and then**
+   run `node --experimental-specifier-resolution=node path/to/this-project/index.js` to start the
+   framework.
 
    You can append `-- -h` to see the help message, likely all other commands that should be interpreted by this
    project's CLI should be appended after `--`.
