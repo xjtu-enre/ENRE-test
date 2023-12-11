@@ -93,10 +93,11 @@ Node.js 16~18.
 
 This project should also be version controlled by Git and submit to GitHub as a public standalone repository.
 
-* You should fork this template project and name it as `ENRE-xx-test` where `xx` is the language label.
+* You should use this template project to create a new repository in GitHub and name it as `ENRE-xx-test` where `xx` is
+  the language label.
 * You should also update the `package.json` file to reflect the language label and other information.
-* If this template (upstream) is updated, you should merge the upstream changes into your forked repository.
-* You should also add the forked repository as **a Git submodule** of the ENRE project, and document the setup and usage
+* If this template (upstream) is updated, you should merge the upstream changes into your new repository.
+* You should also add the new repository as **a Git submodule** of the ENRE project, and document the setup and usage
   in the ENRE project's README file.
 
   ([EN Tutorial](https://gist.github.com/gitaarik/8735255), [CHS Tutorial](https://zhuanlan.zhihu.com/p/87053283))
