@@ -6,9 +6,9 @@ import {useCustomCaseSchema} from '@enre-ts/doc-validator';
  * once, which setup language specific customization in the test pipeline.
  */
 export default async function (
-  NewENRENameAnonKind,
+    NewENRENameAnonKind,
 ) {
-  addENRENameAnonKind(NewENRENameAnonKind);
+    addENRENameAnonKind(NewENRENameAnonKind);
 
-  useCustomCaseSchema(await import('./case-meta.js'));
+    useCustomCaseSchema(await import('./case-meta.js'));
 }
