@@ -4,6 +4,7 @@ import {createLogger} from '@enre-ts/shared';
 import {clear, cli} from '@enre-ts/test-generator';
 import customize from './customize';
 import fs from 'node:fs/promises';
+import path from 'node:path';
 
 /**
  * You can use (or import use in other files) this logger object to log messages.
@@ -101,7 +102,7 @@ async function generator(opts) {
             if (caseObj.code) {
                 casePath = `tests/cases/_${groupMeta.name}/_${caseObj.assertion.name}`;
                 try {
-                    await fs.mkdir(casePath);
+                    await fs.mkdir(casePath, {recursive: true});
                 } catch (e) {
                     logger.error(e);
                 }
@@ -109,6 +110,9 @@ async function generator(opts) {
                 for (const file of caseObj.code) {
                     filePathList.push(file.path);
                     try {
+                        const filePath = `${casePath}/${file.path}`;
+                        // Create parent directory if not existed, using `recursive` so that already existed is not an error
+                        await fs.mkdir(path.dirname(filePath), {recursive: true});
                         await fs.writeFile(`${casePath}/${file.path}`, file.content);
                     } catch (e) {
                         logger.error(e);
