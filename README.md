@@ -42,6 +42,7 @@ checks and enforces the format of ENRE test documents, which can also be used as
     <tr>
         <td>Clear old files and setup relevant directories</td>
         <td>Provided</td>
+        <td></td>
     </tr>
     <tr>
         <td>Generate native test code</td>
@@ -52,6 +53,7 @@ checks and enforces the format of ENRE test documents, which can also be used as
         <th rowspan="2">The output</th>
         <td>Native test code</td>
         <td>The language and test framework relevant code file.</td>
+        <td></td>
     </tr>
     <tr>
         <td>Format check result</td>
@@ -62,6 +64,7 @@ checks and enforces the format of ENRE test documents, which can also be used as
         <th>After these</th>
         <td>Run native test code</td>
         <td>Run generated native test code and do all debugging staffs on demand.</td>
+        <td></td>
     </tr>
 </table>
 
